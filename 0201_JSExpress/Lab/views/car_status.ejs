@@ -1,0 +1,22 @@
+<%- include("./partials/header") %>
+
+    <h1>Car Status!</h1>
+
+    <% if ( year) { %>
+        <h2> Your  <%= year %> car is <%= ageStatus %> </h2> 
+    <% } %>
+
+    Model Year: <br>
+    <form>
+    <select name="year" >
+        <% for (let i = 1950; i <= 2025; i++) { %>
+            <option value="<%=i%>"> <%= i %> </option>
+        <% } %>
+    </select>    
+    <input type="submit" value="Submit" />
+    </form>
+    
+    </body>
+</html>
+
+<%- include("./partials/footer") %>

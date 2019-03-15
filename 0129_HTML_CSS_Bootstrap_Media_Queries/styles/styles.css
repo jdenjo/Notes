@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url("reset.css");
+
+
+/* Mobile First Styles */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Let's get to all the typographic and image styles */
+
+body {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 100%;
+}
+
+h1 {font-family: 'Staatliches', cursive; font-size: 3em;}
+
+p {font-size: 1.2em;font-weight: 600;}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 5em;
+  height: auto;
+}
+
+/* Main Page Structure for Mobile */
+
+/* 100% width on mobile */
+header,
+article,
+footer {
+  width: 100%;
+  min-height: 70vh;    
+}
+header, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical */
+  justify-content: center; /* Horizontal */
+  padding: 2em;
+  background: #f5f5f5;
+  text-align: center; /* Keeps paragraphs centered */
+}
+
+/* Article, Card & Button Styles */
+article {
+  background: yellowgreen;
+  display: flex; /* If we use display: block then we can't change the flex item order later on */
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center; /* Vertical */
+  justify-content: center; /* Horizontal */   
+  background: white; /* Fallback for older browsers */
+  background: rgba(255, 255, 255, 0.875); /* Red Green Blue Alpha */
+  font-size: 1.5em;
+  padding: 2em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* New Topic: Ordering Card Items on Mobile */
+
+.b-text {
+  order: 1; /* Default is 0 */
+  background: lightblue;
+}
+
+
+
+/* Desktop Styles Last */
+
+/*This applies from 600px onwards*/
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical */
+  justify-content: center; /* Horizontal */    
+}
+
+
+   /* Basic Boostrap Styles */
+   .container {background: pink; padding: 1em; min-height: 70vh; min-width: 90%}
+   
+   .row {background: lightblue; padding: 2em; border: 1px solid white;}
+
+   .col-sm {color: deepskyblue; border: 1px solid deeppink; padding: 1em; 
+   }
+
+    .col {color: deepskyblue; border: 1px solid deeppink; padding: 1em; 
+      min-height: 70vh}
+      
+
+@media (min-width: 600px) {
+
+
+  article {
+    display: flex;
+    flex-direction: row;
+    background: #edf2f6;
+  }
+
+  .item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    background: yellowgreen;
+    margin: 1em;
+  }
+
+  .item:hover {
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    /* horiztonal offset, vertical offset, blur, size */
+    transform: translateY(-2px) scale(1.005) translateZ(0);
+
+  }
+
+  .b-text {
+    order: 0;
+    background: lightblue;
+  }
+
+
+}
+ 

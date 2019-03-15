@@ -1,0 +1,43 @@
+
+
+
+<!-- Next Module
+Go to the Wikipedia page on Pugs. Open up a console, and hack away with JavaScript:
+
+1. Change the title of the article to your name.
+document.querySelector('#firstHeading').innerText = "Dean"
+
+2. Hide the body of the article
+document.querySelector('.mw-parser-output').remove()
+
+3. Replace the Wikipedia logo with another picture
+
+
+Don't forget to save your code. You might get picked for the stage!
+
+Stretch
+Replace the word "pug" in every p tag with "spud". -->
+
+
+
+document.querySelector('a').href
+
+document.querySelectorAll('a')
+
+document.querySelector("#logo").children[0].setAttribute("href","http://wwww.google.com")
+
+document.querySelector("body").style.fontFamily = "Papyrus"
+
+
+
+let links = document.querySelectorAll(".js-navigation-open")
+links.forEach(a => { a.style.color = "red"})
+
+
+document.querySelectorAll(“.icon”).forEach(a => {
+a.remove()
+})
+
+document.querySelector(".octicon-mark-github").remove()
+document.querySelector(".header-logo-invertocat").append(document.querySelectorAll(".markdown-body")[0].children[0].children[0].children[0].cloneNode())
+document.querySelector(".header-logo-invertocat").children[0].style.width = "40px

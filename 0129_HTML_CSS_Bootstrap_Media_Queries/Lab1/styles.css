@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url("reset.css");
+
+
+/* Mobile First Styles */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.card{
+  margin-bottom: 2em;
+}
+
+.jumbotron{
+  text-align: center;
+}
+
+.fas{
+  color: white;
+  font-size: 1.5em;
+}

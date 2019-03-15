@@ -1,0 +1,13 @@
+<%- include("./partials/header") %>
+
+    Enter your names 
+    <form>
+    <textarea rows="4" cols="50" name="names" type="text"><%= names %></textarea>
+    <input type="submit" value="submit">
+    </form>
+
+    <% if (randomPerson != "") { %>
+    <h1> Your winner is  <%= randomPerson %> </h1>
+    <% } %>
+
+<%- include("./partials/footer") %>

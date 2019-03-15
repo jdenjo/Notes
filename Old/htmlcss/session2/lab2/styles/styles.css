@@ -1,0 +1,50 @@
+body {   
+    background-color:white;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 100%; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* display: block; */
+}
+
+
+.maincontainer{
+    display:flex;
+    background-color: pink;
+    min-width: 100%;
+    min-height: 100%;
+    flex-direction: row;
+    padding: 1em;
+
+}
+
+.leftside{
+    display:flex;
+    background-color: yellow;
+    flex-direction: row; 
+    min-width: 50%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;;
+    min-height: 100%;
+    padding: 0.75em;
+}
+
+.rightside{
+    display:flex;
+    background-color: green;
+    min-width: 50%;
+    padding: 0.75em;
+    height: 50em;
+}
+
+.leftmenu{
+    display:flex;
+    background: orange;
+    padding: 1em;
+    height: 15%;
+    flex: 1;
+}

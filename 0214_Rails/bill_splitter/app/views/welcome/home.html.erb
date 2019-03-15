@@ -1,0 +1,41 @@
+<h1>Bill Splitter</h1>
+
+<%= form_tag("/") do %>
+  <div>
+    <%= label_tag(:amount) %> $<br>
+    <%= text_field_tag(:amount, @amount) %>
+  </div>
+
+  <div>
+    <%= label_tag(:taxes) %> % <br>
+    <%= text_field_tag(:taxes, @taxes) %>
+  </div>
+
+  <div>
+    <%= label_tag(:tips) %> % <br>
+    <%= text_field_tag(:tips, @tips) %>
+  </div>
+
+  <div>
+    <%= label_tag(:people) %> <br>
+    <%= text_field_tag(:people, @people) %>
+  </div>
+
+  <%= submit_tag("Calculate") %>
+
+<% end %>
+
+<%
+
+if @tips && @amount
+
+  sum = (@amount.to_f * (1 + (@tax.to_f/100))) 
+  sum = sum * (1 + (@tips.to_f/100))
+  sum = sum / @people.to_f
+  %>
+
+  <p>
+  Each person pays $ <%= sum.round(3) %>
+  </p>
+
+<% end %>

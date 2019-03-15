@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url(reset.css);
+
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+    
+body {   
+    background-color:red;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 100%; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: block; */
+}
+
+/* 
+.container {background: green; padding: 1em;min-height: 50vh;} */
+
+/* header, article, footer {min-height: 10vh; padding: 3em;} */
+
+/* header {background: pink;}
+article {background: white;}
+footer {background: yellow;} */
+
+header a {
+    color: white;
+  }
+
+  header, footer{
+      min-height: 13vh;
+
+  }
+
+h1,
+h2,
+h3 {
+    font-family: 'Staatliches', cursive;
+}
+
+p,
+li {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+article {
+    flex: 1;
+    display:flex;
+    flex-direction: row;
+    background: #edf2f6;
+
+}
+
+.card {
+    font-size: 1.5em;
+    padding: 2em;
+    background: white;
+    background: rgba(255, 255, 255, 0.875);
+    line-height: 1.2em;
+    margin: 1em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+    }
+
+
+
+.card:hover{
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    transform: translateY(-2px) scale(1.005) translateZ(0);
+    }
+
+.pullquote {
+    flex: 1;
+}
+
+.card p {
+    flex: 1;
+}
+
+button {
+    border: 2px solid #eee;
+    background: white;
+    padding: 0.75em 1.5em;
+    width: 10em;
+    font-family: 'Thasadith', sans-sariff;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+button:hover{
+    background: red; 
+    color: white;
+}
+
+header{
+    display:flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 5em;
+}
+
+.nav{
+    width:30%;
+    min-height: 100%;
+    background-color: red;
+    /* padding: 1em; */
+    display:flex;
+
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;    
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100%;
+    padding-right: 1em;
+    font-size: 20px;
+
+}
+
+
+.branding{
+    display:flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding-left: 0.5em;
+} 
+
+footer{
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+    color: white;
+    height: 1.5em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+ footer .footnav:hover{
+
+      color:black;
+  }
+
+
+  .Navlist{
+      display:flex; 
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      width:30%;
+      font-size: 25px;
+  }
+
+  .bottombar{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+
+
+  }
+
+  

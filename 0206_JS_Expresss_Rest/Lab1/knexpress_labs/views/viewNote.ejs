@@ -1,0 +1,26 @@
+<%- include("./partials/header") %>
+<h1>View a single note </h1>
+<div >
+        <div>
+        ID: <%= note.id %> <br>
+        Content: <%= note.content %> <br>
+        Created: <%= note.createdAt %> <br>
+        </div>
+</div>
+
+<br>
+
+<form method="POST" action="/notes/<%= note.id %>">
+<input type="hidden" name="_method" value="DELETE">
+<input type="submit" class="btn btn-outline-danger" value="Delete">
+</form>
+
+<br>
+
+<form method="POST" action="/notes/<%= note.id %>/edit">
+<input type="hidden" name="_method" value="GET">
+<input type="submit" value="Update">
+</form>
+
+
+<%- include("./partials/footer") %>

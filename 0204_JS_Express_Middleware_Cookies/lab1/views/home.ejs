@@ -1,0 +1,19 @@
+<%- include("./partials/header") %>
+
+<h1>
+    <% if (language == "english") {%>
+    Hello <%= username %>!  Your Language is <%= language %> <br>
+    <% } %>
+
+    <% if (language == "spanish") {%>
+    Hola <%= username %>! Your Language is <%= language %> <br>
+    <% } %>
+
+    <% if (language == "french") {%>
+    Bonjour <%= username %>!  Your Language is <%= language %> <br>
+    <% } %>
+
+    
+</h1>
+    
+<%- include("./partials/footer") %>

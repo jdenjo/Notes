@@ -1,0 +1,8 @@
+<%- include('./partials/header') %>
+<h1>Welcome</h1>
+<ul>
+<% todos.forEach((todo) => { %>
+    <li><%= todo.title %> - <%= todo.body %></li>
+<% }) %>
+</ul>
+<%- include('./partials/footer') %>

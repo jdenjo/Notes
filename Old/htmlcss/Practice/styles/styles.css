@@ -1,0 +1,88 @@
+
+@import url(reset.css);
+
+body {
+    color: white;
+    background: #dddd;
+    font-family: 'Slabo 27px', serif;
+    padding: 3em;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Let's flex! */
+  
+  .container {
+    display: flex; /* Flex Layout */
+    width: 100%;
+    min-height: 100vh; /* Viewport Height */
+    border-bottom: 1px solid white;
+    /* The dot above refers to a class in HTML */
+  
+  }
+
+
+.item {
+    flex-direction: column; /* Columns or rows */
+    background: deepskyblue;
+    padding: 2em 2.25em;
+    flex: 1;
+  }
+  
+  
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 1em;
+  }
+  
+h2 {
+    font-size: 1.75em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+
+p{
+    line-height: 1.5;
+    margin-bottom: 1em;
+  
+  }
+
+.aligning {
+      align-items: center;
+      justify-content: center;
+  }
+
+  .zero h1,
+  .zero h2,
+  .zero h3,
+  .zero p{
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .grow{
+      flex-grow: 3;
+  }
+
+  nav ul{
+      display:flex;
+      justify-content: space-between;
+  }
+
+  nav li{
+      flex-direction: column;
+  }
+
+header{
+    background: deepskyblue;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}

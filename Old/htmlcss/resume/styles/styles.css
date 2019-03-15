@@ -1,0 +1,122 @@
+
+@import url(reset.css);
+
+body {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3em;
+    color: black;
+}
+
+p, li{
+    line-height: 1.4em;
+
+}
+
+header{
+text-align: center;
+}
+
+header p{
+    font-weight: bold;
+}
+
+
+main{
+text-align: left;
+margin-bottom: 2em;
+margin-top: 2em;
+}
+
+main h1{
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    background: black;
+    color: white;
+    padding: 0.2em;
+}
+
+
+header h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.2em;
+  }
+  
+header h2 {
+    font-size: 1.75em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    background: white;
+}
+
+
+.name-address{
+    margin-bottom: 1em;
+
+}
+
+.contact-info , .company-dates {
+    display: flex; /* Flex Layout */
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+
+  .company-dates{
+      margin-top: 1em;
+  }
+
+  .position{
+    font-weight: bold;
+    margin-bottom: 0.5em  
+}
+
+.experience{
+    list-style-type: disc; 
+    list-style-position: inside;
+
+}
+
+.job-title{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+
+}
+
+.Education H2{
+
+    margin-top: 1em;
+    font-weight: bold;
+
+}
+
+.Education H3{
+    margin-bottom: 1em;
+    margin-top: 0em;
+
+
+}
+
+  
+.container {
+    display: flex; /* Flex Layout */
+    width: 100%;
+    border-bottom: 1px solid white;
+    /* The dot above refers to a class in HTML */
+  
+  }
+
+  .item {
+    flex-direction: column; /* Columns or rows */
+    padding: 1em 2.25em;
+    flex: 1;
+    text-align: center;
+  }
+
+  footer p{
+      text-align: center;
+  }
+  

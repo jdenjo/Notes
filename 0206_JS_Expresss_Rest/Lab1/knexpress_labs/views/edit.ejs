@@ -1,0 +1,11 @@
+<%- include("./partials/header") %>
+
+<h1>Edit Note</h1>
+<form action="/notes/<%= note.id %>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+    <label for="content">Content</label>
+    <textarea name="content"><%= note.content %></textarea>
+    <input type="submit" value="Update Note">
+</form>
+
+<%- include("./partials/footer") %>

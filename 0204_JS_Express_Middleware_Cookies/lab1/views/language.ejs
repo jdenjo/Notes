@@ -1,0 +1,16 @@
+<%- include("./partials/header") %>
+
+<h1>Language Selection</h1>
+<form action="/select_language" method="POST">
+    <label for="username">Name:</label>
+    <input type="text" name="username">
+    <label for="language">Selected Language</label>
+    <select name="language">
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="spanish">Spanish</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+
+<%- include("./partials/footer") %>

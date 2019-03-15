@@ -1,0 +1,11 @@
+<h1> Test</h1>
+
+
+
+<%
+sum = (@amount.to_f * (1 + (@tax.to_f/100))) 
+sum = sum * (1 + (@tips.to_f/100))
+sum = sum / @people.to_f
+%>
+
+Each person pays $ <%= sum %>

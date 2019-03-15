@@ -1,0 +1,12 @@
+<%- include("./partials/header") %>
+
+<h1>Welcome to the Todo List App</h1>
+
+
+<h1>Enter your To Do</h1>
+<form action="/addTask" method="POST">
+    <input type="text" name="task">
+    <button type="submit">Submit</button>
+</form>
+    
+<%- include("./partials/footer") %>

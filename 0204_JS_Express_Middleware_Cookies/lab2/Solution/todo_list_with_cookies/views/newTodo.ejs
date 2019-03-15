@@ -1,0 +1,10 @@
+<%- include('./partials/header') %>
+<h1>Todo Form</h1>
+<form action="/newTodo" method="POST">
+    <label for="title">Title</label>
+    <input name="title" type="text">
+    <label for="body">Body</label>
+    <textarea name="body"></textarea>
+    <button type="submit">Submit</button>
+</form>
+<%- include('./partials/footer') %>

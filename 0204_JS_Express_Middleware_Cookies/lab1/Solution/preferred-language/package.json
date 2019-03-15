@@ -1,0 +1,26 @@
+{
+	"name": "preferred-language",
+	"version": "0.0.1",
+	"description": "Preferred Language Lab",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon app.js"
+	},
+	"keywords": [
+		"Express",
+		"Cookies",
+		"Preferred-language"
+	],
+	"author": "Max Gordon",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "^1.4.3",
+		"ejs": "^2.6.1",
+		"express": "^4.16.4",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.9"
+	}
+}

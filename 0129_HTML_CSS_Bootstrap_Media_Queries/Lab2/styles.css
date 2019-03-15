@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url("reset.css");
+
+
+/* Mobile First Styles */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.card{
+  margin-bottom: 2em;
+}
+
+.jumbotron{
+  text-align: center;
+}
+
+.fas{
+  color: white;
+  font-size: 1.5em;
+}
+
+.container{
+  text-align: center;
+  background-color: pink;
+}
+
+.col{
+  text-align: center;
+  background-color: green;
+}
+
+.card{
+  background-color: yellow;
+  width: 90%;
+  margin: 1em;
+}
+
+.col4{
+  background-color: red;
+}

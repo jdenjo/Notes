@@ -1,0 +1,13 @@
+<%- include("./partials/header") %>
+<h1>View the notes </h1>
+<div >
+    <% for (let note of notes) { %>
+        <div>
+        <a href="/notes/<%= note.id %>">
+        <%= note.content %> </a> 
+        </div>
+    <% }%>
+</div>
+
+<%- include("./partials/footer") %>
+

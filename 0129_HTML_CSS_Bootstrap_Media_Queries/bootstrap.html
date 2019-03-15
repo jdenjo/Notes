@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Bootstrap Basics</title>
+  <meta charset="utf-8">
+  <!--New topic: Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>Hello, Bootstrap! Let's add more text to make this line longer.</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+
+
+      <h2>These classes apply to every device and viewport</h2>
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              1 of 2
+            </div>
+            <div class="col">
+              2 of 2
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              2 of 3
+            </div>
+            <div class="col">
+              3 of 3
+            </div>
+          </div>
+        </div>
+<h2>Responsive classes</h2>
+<div class="container">
+<div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row">
+    <div class="col-8">col-8</div>
+    <div class="col-4">col-4</div>
+  </div>
+</div>
+
+<h3>Stacked to horizontal</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">col-sm-12</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">col-sm-6</div>
+          <div class="col-sm-6">col-sm-6</div>
+        </div>
+
+<div class="row">
+    <div class="col-sm-8">col-sm-8</div>
+    <div class="col-sm-4">col-sm-4</div>
+  </div>
+  <div class="row">
+    <div class="col-sm">col-sm</div>
+    <div class="col-sm">col-sm</div>
+    <div class="col-sm">col-sm</div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+</div>
+</body>
+
+</html>
